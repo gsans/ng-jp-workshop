@@ -13,22 +13,6 @@ In this workshop we'll learn how to build cloud-enabled web applications with An
 - [Deploying via the Amplify Console](https://github.com/gsans/aws-amplify-workshop-angular#amplify-console)
 - [Removing / Deleting Services](https://github.com/gsans/aws-amplify-workshop-angular#removing-services)
 
-<!-- ## Redeeming our AWS Credit   
-
-1. Visit the [AWS Console](https://console.aws.amazon.com/console).
-2. In the top right corner, click on __My Account__.
-![](dashboard1.jpg)
-3. In the left menu, click __Credits__.
-![](dashboard2.jpg) -->
-
-## Redeeming your AWS Credit   
-
-1. Visit the [AWS Console](https://console.aws.amazon.com/console).
-2. In the top right corner, under your username, click on __My Account__.
-<!-- ![](dashboard1.jpg) -->
-3. In the left menu under Home, click __Credits__.
-<!-- ![](dashboard2.jpg) -->
-
 ## Pre-requisites
 
 - Node: `11.13.0`. Visit [Node](https://nodejs.org/en/download/)
@@ -48,7 +32,7 @@ If you already have it installed, skip to the next step. If not, either install 
 npm install -g @angular/cli
 ng new amplify-app
 ```
-
+ 
 Now change into the new app directory and make sure it runs
 
 ```bash
