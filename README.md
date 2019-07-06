@@ -42,7 +42,7 @@ ng serve
 ```
 ## Changes to Angular CLI project
 
-Add type definitions for __Node__ by changing `src/tsconfig.app.json`. This is a requirement from `aws-js-sdk`.
+Add type definitions for __Node__ by changing `tsconfig.app.json`. This is a requirement from `aws-js-sdk`.
 
 ```json
 {
@@ -56,9 +56,13 @@ Add the following code, to the top of `src/polyfills.ts`. This is a requirement 
 
 ```js
 declare global {
-  interface Window { global: any; }
+  interface Window { 
+    global: any; 
+    process: any;
+  }
 }
 window.global = window;
+window.process = {};
 ```
 
 ## Installing the CLI & Initializing a new AWS Amplify Project
@@ -86,7 +90,7 @@ amplify configure
 > If you'd like to see a video walkthrough of this configuration process, click [here](https://www.youtube.com/watch?v=fWbM5DLh25U).
 
 Here we'll walk through the `amplify configure` setup. Once you've signed in to the AWS console, continue:
-- Specify the AWS Region: __ap-south-1(Mumbai)__
+- Specify the AWS Region: __ap-southeast-1(Singapore)__
 - Specify the username of the new IAM user: __amplify-app__
 > In the AWS Console, click __Next: Permissions__, __Next: Tags__, __Next: Review__, & __Create User__ to create the new IAM user. Then, return to the command line & press Enter.
 - Enter the access key of the newly created user:   
@@ -592,7 +596,7 @@ git commit -m 'initial commit'
 git push origin master
 ```
 
-Next we'll visit the Amplify Console in our AWS account at [https://ap-south-1.console.aws.amazon.com/amplify/home](https://ap-south-1.console.aws.amazon.com/amplify/home).
+Next we'll visit the Amplify Console in our AWS account at [https://ap-southeast-1.console.aws.amazon.com/amplify/home](https://ap-southeast-1.console.aws.amazon.com/amplify/home).
 
 Here, we'll click __Get Started__ to create a new deployment. Next, authorize Github as the repository service.
 
