@@ -90,7 +90,7 @@ amplify configure
 > If you'd like to see a video walkthrough of this configuration process, click [here](https://www.youtube.com/watch?v=fWbM5DLh25U).
 
 Here we'll walk through the `amplify configure` setup. Once you've signed in to the AWS console, continue:
-- Specify the AWS Region: __ap-southeast-1(Singapore)__
+- Specify the AWS Region: __ap-northeast-1(Tokyo)__
 - Specify the username of the new IAM user: __amplify-app__
 > In the AWS Console, click __Next: Permissions__, __Next: Tags__, __Next: Review__, & __Create User__ to create the new IAM user. Then, return to the command line & press Enter.
 - Enter the access key of the newly created user:   
@@ -596,7 +596,7 @@ git commit -m 'initial commit'
 git push origin master
 ```
 
-Next we'll visit the Amplify Console in our AWS account at [https://ap-southeast-1.console.aws.amazon.com/amplify/home](https://ap-southeast-1.console.aws.amazon.com/amplify/home).
+Next we'll visit the Amplify Console in our AWS account at [https://ap-northeast-1.console.aws.amazon.com/amplify/home](https://ap-northeast-1.console.aws.amazon.com/amplify/home).
 
 Here, we'll click __Get Started__ to create a new deployment. Next, authorize Github as the repository service.
 
@@ -626,3 +626,18 @@ amplify status
 ```
 
 `amplify status` will give you the list of resources that are currently enabled in your app.
+
+
+## Appendix
+
+### Setup your AWS Account
+
+In order to follow this workshop you need to create and activate an Amazon Web Services account. 
+
+Follow the steps [here](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account)
+
+### Trobleshooting
+
+Message: The AWS Access Key Id needs a subscription for the service
+
+Solution: Make sure you are subscribed to the free plan. [Subscribe](https://portal.aws.amazon.com/billing/signup?type=resubscribe#/resubscribed)
